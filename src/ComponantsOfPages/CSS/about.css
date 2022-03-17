@@ -1,0 +1,163 @@
+h2 {
+  font-size: 2em;
+  font-family: "Gideon Roman";
+}
+i {
+  cursor: pointer;
+}
+.about-section-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #d6d6d6f5 30%, #d6d6d6c9),
+    url("../../images/wood-wall.jpg") center center/cover fixed;
+}
+.about-restaurent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: fit-content;
+}
+.about-res-img {
+  height: 100%;
+  /* width: 50%; */
+}
+.about-res-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.about-detail {
+  padding: 4vw;
+}
+.about-detail h2 {
+  margin-bottom: 50px;
+}
+.about-detail p {
+  font-family: "Roboto";
+  line-height: 30px;
+  text-align: justify;
+  letter-spacing: 0.5px;
+}
+
+/* ============= Service Part ============ */
+
+.restaurants-services {
+  padding: 50px 6%;
+}
+
+.restaurants-services h2 {
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.services-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 1vw;
+}
+
+.service-card-container {
+  border: 2px solid #56b3ff;
+  text-align: center;
+  padding: 10px;
+  letter-spacing: 0.6px;
+}
+.service-card-container:hover {
+  border: 2px solid #3c7aad;
+}
+.service-icon {
+  padding: 10px 0;
+}
+.service-card-container h4 {
+  text-transform: uppercase;
+  padding: 10px 0;
+}
+.service-card-container p {
+  line-height: 25px;
+  padding: 10px 0;
+}
+
+/* =========== Chef profile card ============= */
+.restaurents-chef {
+  padding: 50px 6%;
+}
+.chef-profiles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 30px 0;
+}
+.chef-profile-card-container {
+  padding: 5%;
+  border: 1px solid #fff;
+  text-align: center;
+}
+.chef-profile-card-container:hover {
+  border: 2px solid #fff;
+}
+
+.chef-profile-pic img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5%;
+  object-fit: cover;
+}
+.chef-profile-card-container h4 {
+  font-family: "Roboto";
+  font-size: 1.1em;
+  line-height: 30px;
+}
+.chef-profile-card-container h5 {
+  color: #747474;
+  margin-bottom: 10px;
+}
+.chef-profile-card-container p {
+  font-size: 0.95em;
+  /* text-align: justify; */
+}
+.social-media {
+  text-align: right;
+  margin: 5px 0;
+}
+.social-media i {
+  color: #0362a1;
+  padding: 5px;
+  font-size: 1.1em;
+}
+.social-media i:hover {
+  color: #0383d8;
+}
+
+/* ================ Responsive Part ================ */
+
+@media (max-width: 768px) {
+  .about-restaurent {
+    display: block;
+    text-align: center;
+    background: linear-gradient(#d6d6d6e1, #d6d6d6e1),
+      url("../../images/resturent-inside.jpg") center center/cover;
+  }
+  .about-res-img {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 1vw;
+  }
+  .service-card-container {
+    border: 1px solid #56b3ff;
+  }
+  .chef-profiles-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    margin: 30px 0;
+  }
+}

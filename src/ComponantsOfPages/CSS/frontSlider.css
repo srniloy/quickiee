@@ -1,0 +1,103 @@
+.react-slideshow-container{
+    position: relative;
+}
+.default-nav:first-of-type{
+    position: absolute;
+    left: 20px;
+}
+.default-nav:last-of-type{
+    position: absolute;
+    right: 20px;
+}
+
+
+
+
+
+#sliderContainer{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#sliderContainer .accountSwitcher{
+    position: absolute;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%) scale(1);
+    transition: all 500ms;
+    z-index: 100;
+    color: #969696;
+    background: #000000e5;
+    padding: 40px 20px 20px;
+    border-radius: 5%;
+}
+#sliderContainer i{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+#sliderContainer .accountSwitcher button{
+    padding: 6px 8px;
+    background: rgb(82, 81, 81);
+    border: none;
+    outline: none;
+    margin: 10px 0;
+    color: rgb(185, 184, 184);
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 100ms;
+}
+#sliderContainer .accountSwitcher button:hover{
+    background: #d3d0d0;
+    color: #424242;
+    font-weight: 700;
+}
+
+
+.each-slide{
+    height: 500px;
+    position: relative;
+}
+.each-slide-info{
+    position: absolute;
+    left: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 500px;
+    width: 40vw;
+
+}
+.slides-btn{
+    display: flex;
+    justify-content: end;
+}
+.each-slide h1{
+    color: #f50;
+    /* border: 1px solid white; */
+    background: #000000d2;
+    padding: 30px;
+    font-size: 2.2em;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    /* transform: skew(); */
+}
+
+
+
+@media (max-width: 768px) {
+    .each-slide-info{
+        left: 50%;
+        top: 50%;
+        width: 70vw;
+        transform: translate(-50%,-50%);
+    } 
+
+    #sliderContainer .accountSwitcher{
+        display: none;
+    }
+    .each-slide h1{
+        font-size: 1.9em;
+    }
+}
