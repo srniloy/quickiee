@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter,Router, Routes, Route} from 'react-router-dom'
+// import {BrowserRouter,Router, Routes, Route} from 'react-router-dom'
 import About from './ComponantsOfPages/About';
 import Events from './ComponantsOfPages/Events';
 import { Home } from './pages/Home';
@@ -13,18 +13,19 @@ import Footer from './ComponantsOfPages/Footer';
 
 function App() {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
         <div className='div-app'>
         <Navbar/>
-        <Routes>
+        <Home/>
+        {/* <Routes>
           <Route path='/*' exact element={<Home/>}/>
           <Route path='/food-items' element={<FoodItemsPage/>}/>
           <Route path='/events' element={<EventPage/>}/>
           <Route path='/about-us' element={<AboutPage/>}/>
           <Route path='/reservation' element={<ReservationPage/>}/>
-        </Routes>
+        </Routes> */}
     </div>
-      </BrowserRouter>
+      // </BrowserRouter>
   );
 }
 

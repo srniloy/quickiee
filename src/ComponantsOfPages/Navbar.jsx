@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import '../ComponantsOfPages/CSS/Navbar.css'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
     const [IsOpen, setIsOpen] = useState(false);
@@ -35,13 +35,20 @@ export const Navbar = () => {
                 </div>
                 
                 <ul className='nav' style={IsOpen?{left: '0%'}:{left: '-100%'}}>
-                    <li><Link to='/' onClick={navListFocusing}><p className="nav-list-active">Home</p></Link></li>
+                    <li><p>Home</p></li>
+                    <li><p>Food Items</p></li>
+                    <li><p>About Us</p></li>
+                    <li><p>Reservation</p></li>
+                    <li><p>Contact</p></li>
+                    <li><button>Create Account</button> & <button>Login</button></li>
+
+                    {/* <li><Link to='/' onClick={navListFocusing}><p className="nav-list-active">Home</p></Link></li>
                     <li><Link to='/food-items' onClick={navListFocusing}><p>Food Items</p></Link></li>
                     <li><Link to='/events' onClick={navListFocusing}><p>Events</p></Link></li>
                     <li><Link to='/about-us' onClick={navListFocusing}><p>About Us</p></Link></li>
                     <li><Link to='/reservation' onClick={navListFocusing}><p>Reservation</p></Link></li>
                     <li><Link to='/' onClick={navListFocusing}><p>Contact</p></Link></li>
-                    <li><button>Create Account</button> & <button>Login</button></li>
+                    <li><button>Create Account</button> & <button>Login</button></li> */}
                 </ul>
             </div>
         </div>

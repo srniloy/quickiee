@@ -42,6 +42,7 @@
 .navbar-container .nav li {
   display: inline-block;
   margin: 0 1vh;
+  cursor: pointer;
 
   /* margin: 0 5px; */
 }
