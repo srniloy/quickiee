@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   display: flex;
+  height: 50px;
   justify-content: center;
   background-color: rgb(43, 44, 43);
   z-index: 101;
@@ -15,7 +16,13 @@
   color: rgb(240, 240, 240);
   /* padding: 0 5%; */
   font-size: 14px;
-  width: 90%;
+  width: 100%;
+}
+.navbar-container .logo {
+  margin-left: 5vw;
+}
+.navbar-container .menu-icon {
+  margin-right: 5vw;
 }
 .navbar-container .logo h3 {
   font-size: 18px;
@@ -38,11 +45,11 @@
   height: max-content;
   list-style-type: none;
   display: inline-block;
+  margin-right: 5vw;
 }
 .navbar-container .nav li {
   display: inline-block;
   margin: 0 1vh;
-  cursor: pointer;
 
   /* margin: 0 5px; */
 }
@@ -114,6 +121,7 @@
     text-align: center;
     background-color: #000000a8;
     left: -100%;
+    top: 50px;
     transition: all 0.5s;
   }
   .navbar-container .nav li {

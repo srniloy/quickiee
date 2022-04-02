@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar } from '../ComponantsOfPages/Navbar'
+// import { Navbar } from '../ComponantsOfPages/Navbar'
 import { FrontSlider } from '../ComponantsOfPages/FrontSlider'
 import FoodItems from '../ComponantsOfPages/FoodItems'
 import Events from '../ComponantsOfPages/Events'
@@ -8,6 +8,7 @@ import Reservation from '../ComponantsOfPages/Reservation'
 import Footer from '../ComponantsOfPages/Footer'
 
 export const Home = () => {
+  window.scrollTo(0,0);
     return ( 
         <>
         <FrontSlider/>

@@ -1,6 +1,6 @@
 import React from 'react'
 import '../ComponantsOfPages/CSS/frontSlider.css'
-import {useState, useEffect} from 'react';
+import {useState} from 'react';
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import {Button} from './Button';

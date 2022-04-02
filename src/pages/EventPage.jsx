@@ -5,6 +5,7 @@ import { PagesPath } from '../ComponantsOfPages/MixComponet'
 import { Navbar } from '../ComponantsOfPages/Navbar'
 
 export default function EventPage() {
+  window.scrollTo(0,0);
   return (
     <>
         <PagesPath pageName={"Events"}/>

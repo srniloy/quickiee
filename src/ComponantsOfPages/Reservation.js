@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import { Button } from './Button'
-import { Heading } from './MixComponet'
+// import { Heading } from './MixComponet'
 import './CSS/reservation.css'
 
 

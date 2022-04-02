@@ -1,5 +1,5 @@
 import React from 'react'
-import { Heading } from './MixComponet'
+// import { Heading } from './MixComponet'
 import './CSS/about.css'
 
 export default function About() {
